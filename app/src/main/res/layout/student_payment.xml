@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.krush.studentFragments.StudentProfileFragment"
+    android:id="@+id/student_payment">
+
+    <TextView
+        android:text="Total tutoring fee:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/costLabel"
+        tools:text="Total tutoring fee:"
+        android:paddingStart="10sp"
+        android:textSize="24sp"
+        android:layout_marginTop="41dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/paymentHeader"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+
+    <TextView
+        android:text="$0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tutoringCost"
+        tools:text="$0.00"
+        android:textSize="24sp"
+        android:paddingStart="10sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/costLabel"
+        android:layout_alignBottom="@+id/costLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/costLabel" />
+
+    <TextView
+        android:text="Card Number:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardNumberLabel"
+        android:paddingStart="10sp"
+        android:textSize="20sp"
+        tools:text="Card Number:"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/expDateLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:layout_toStartOf="@+id/creditNumberInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="MM/YY"
+        android:id="@+id/monthInput"
+        android:layout_below="@+id/creditNumberInput"
+        android:layout_alignStart="@+id/creditNumberInput"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentHeader"
+        tools:text="Payment"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Exp. Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10sp"
+        android:id="@+id/expDateLabel"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        tools:text="Exp. Date:"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/monthInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="000"
+        android:id="@+id/cvvNumberInput"
+        android:layout_below="@+id/monthInput"
+        android:layout_alignStart="@+id/monthInput"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="CVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvvLabel"
+        tools:text="CVV:"
+        android:paddingStart="10sp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBaseline="@+id/cvvNumberInput"
+        android:layout_alignBottom="@+id/cvvNumberInput"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/cvvNumberInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="4242 4242 4242 4242"
+        android:ems="10"
+        android:id="@+id/creditNumberInput"
+        android:textSize="20sp"
+        android:maxLength="16"
+        android:layout_alignBaseline="@+id/cardNumberLabel"
+        android:layout_alignBottom="@+id/cardNumberLabel"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="59dp"
+        android:id="@+id/submitPayment"
+        android:layout_below="@+id/cvvNumberInput"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bottom_bar_color"/>
+
+    <ImageView
+    android:id="@+id/visaLogo"
+    android:layout_width="60dp"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="6dip"
+    android:src="@drawable/visa"
+    android:layout_below="@+id/costLabel"
+    android:layout_alignStart="@+id/creditNumberInput"
+    android:layout_above="@+id/creditNumberInput" />
+
+    <ImageView
+        android:id="@+id/masterCardLogo"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/mastercard"
+        android:layout_below="@+id/tutoringCost"
+        android:layout_toEndOf="@+id/visaLogo"
+        android:layout_above="@+id/creditNumberInput" />
+
+    <ImageView
+        android:id="@+id/amexLogo"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/amex"
+        android:layout_below="@+id/tutoringCost"
+        android:layout_toEndOf="@+id/masterCardLogo"
+        android:layout_above="@+id/creditNumberInput" />
+
+    <TextView
+        android:id="@+id/paymentMethodsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="We accept:"
+        android:paddingStart="10sp"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/costLabel"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/visaLogo" />
+</RelativeLayout>

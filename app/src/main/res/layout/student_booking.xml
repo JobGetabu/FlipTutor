@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_booking"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="cs.dal.krush.studentFragments.StudentBookingFragment">
+
+    <TextView
+        android:id="@+id/bookingTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book a Tutor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32dp"
+        android:layout_alignParentTop="true"/>
+    <Switch
+        android:id="@+id/filterByCoursesSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter By Your School"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/bookingTitleLabel"/>
+
+
+    <ListView
+        android:id="@+id/availableTutorsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_below="@+id/filterByCoursesSwitch"
+        android:layout_alignParentStart="true" />
+
+
+</LinearLayout>

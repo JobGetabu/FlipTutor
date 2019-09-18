@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cs.dal.krush.RegistrationActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your first name"
+        android:textColorHint="@color/colorPrimary"
+        android:ems="10"
+        android:id="@+id/input_first_name"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:text="Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_page_header"
+        tools:text="Registration"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="What is your role?"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_label"
+        android:layout_below="@+id/text_view_page_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/radio_label"
+        android:layout_alignParentStart="true">
+        <RadioButton android:id="@+id/radio_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/radio_tutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_registration"
+        android:text="Register"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:minWidth="170dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/bottom_bar_color"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your last name"
+        android:textColorHint="@color/colorPrimary"
+        android:ems="10"
+        android:id="@+id/input_last_name"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/input_first_name"
+        android:layout_alignStart="@+id/input_first_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="your@email.com"
+        android:textColorHint="@color/colorPrimary"
+        android:ems="10"
+        android:id="@+id/input_email"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/input_last_name"
+        android:layout_alignStart="@+id/input_last_name" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/school_selecter"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/input_email"
+        android:layout_alignStart="@+id/input_email"
+        android:layout_alignEnd="@+id/input_email" />
+
+    <TextView
+        android:text="Select a school:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/school_label"
+        tools:text="Select a school:"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_below="@+id/input_email"
+        android:layout_alignStart="@+id/radio_label" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/input_password"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimary"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/school_selecter"
+        android:layout_alignStart="@+id/school_selecter"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/input_password_confirm"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/input_password"
+        android:layout_alignStart="@+id/input_password" />
+
+
+</RelativeLayout>

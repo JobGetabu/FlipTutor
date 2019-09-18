@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/student_home">
+
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.06">
+
+        <TextView
+            android:id="@+id/homeTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Student Home"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/helpButtonStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/help"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/upcomingSessionsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeTitleLabel"
+        android:layout_marginTop="10dp"
+        android:text="Your Upcoming Tutoring Sessions:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/upcomingSessionsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/upcomingSessionsLabel" />
+
+    <TextView
+        android:id="@+id/bookTutorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Book a Tutor:"
+        android:paddingTop="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"/>
+
+    <ListView
+        android:id="@+id/availableTutorsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bookTutorLabel" />
+
+</LinearLayout>

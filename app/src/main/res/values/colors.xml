@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2ecc71</color>
+    <color name="colorPrimaryDark">#27ae60</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bottom_bar_color">#ecf0f1</color>
+    <color name="white">#ffff</color>
+    <color name="color_white">#ffff</color>
+    <color name="colorNegativeAction">#e74c3c</color>
+    <color name="buttonDisabled">#532ecc71</color>
+
+</resources>

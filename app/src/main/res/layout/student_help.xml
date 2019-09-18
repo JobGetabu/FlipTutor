@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/studentHelpHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Student Help"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/studentHelpIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:text="Intro"
+            android:layout_below="@+id/studentHelpHeader"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/homeStudentHelpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/studentHelpIntro"
+            android:layout_marginTop="11dp"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:text="Home"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/homeStudentHelpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:text="Home text"
+            android:layout_below="@+id/homeStudentHelpLabel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/bookingStudentHelpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/homeStudentHelpText"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:text="Booking"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookingStudentHelpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bookingStudentHelpLabel"
+            android:text="Booking text"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/seesionsStudentHelpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bookingStudentHelpText"
+            android:layout_marginTop="12dp"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:text="Sessions"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sessionsStudentHelpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/seesionsStudentHelpLabel"
+            android:text="Sessions text"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/profileStudentHelpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sessionsStudentHelpText"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:text="Profile"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profileStudentHelpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/profileStudentHelpLabel"
+            android:text="Profile text"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/declineButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_main"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Close"
+            android:textColor="@color/bottom_bar_color"
+            android:layout_below="@+id/profileStudentHelpText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</ScrollView>

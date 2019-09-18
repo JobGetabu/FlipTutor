@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.krush.tutorFragments.TutorAvailabilityFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tutor_individual_tv"
+        android:layout_height="wrap_content"
+        android:text="DELETE TIMESLOT"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="29dp"/>
+
+    <FrameLayout
+        android:id="@+id/tutor_individual_schedule_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/lvTutorDaySchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tutor_individual_tv"/>
+
+</RelativeLayout>

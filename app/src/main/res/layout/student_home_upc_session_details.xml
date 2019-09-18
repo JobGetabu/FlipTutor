@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/student_upc_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+
+    <ImageView
+        android:id="@+id/student_upc_details_tutor_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/default_icon"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/student_upc_details_tutor_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/student_upc_details_tutor_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutor Email"
+        android:textSize="13dp"
+        android:layout_alignBottom="@+id/student_upc_details_tutor_picture"
+        android:layout_alignStart="@+id/student_upc_details_tutor_name" />
+
+    <TextView
+        android:id="@+id/student_upc_details_tutor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutor name"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/student_upc_details_tutor_picture"
+        android:layout_toEndOf="@+id/student_upc_details_session_label" />
+
+    <TextView
+        android:id="@+id/student_upc_details_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/student_upc_details_session_label"
+        android:layout_alignStart="@+id/student_upc_details_session_label" />
+
+    <TextView
+        android:id="@+id/student_upc_details_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/student_upc_details_location"
+        android:layout_below="@+id/student_upc_details_location"
+        android:layout_marginTop="16dp"
+        android:text="start" />
+
+    <TextView
+        android:id="@+id/student_upc_details_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end time"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/student_upc_details_start"
+        android:layout_alignStart="@+id/student_upc_details_start" />
+
+    <TextView
+        android:id="@+id/student_upc_details_tutor_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutor:"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/student_upc_details_title"
+        android:layout_alignStart="@+id/student_upc_details_tutor_picture"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/student_upc_details_session_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="34dp"
+        android:text="Session Info:"
+        android:layout_below="@+id/student_upc_details_tutor_picture"
+        android:layout_alignStart="@+id/student_upc_details_tutor_picture" />
+
+    <TextView
+        android:id="@+id/student_upc_details_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/student_upc_details_end"
+        android:layout_below="@+id/student_upc_details_end"
+        android:layout_marginTop="16dp"
+        android:text="school" />
+
+    <Button
+        android:id="@+id/sessionDetailLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Directions"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:minWidth="170dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/bottom_bar_color"
+        android:layout_below="@+id/student_upc_details_school"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@+id/student_cancel_session_button"
+        android:layout_alignStart="@+id/student_cancel_session_button" />
+
+    <Button
+        android:id="@+id/student_cancel_session_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_cancel"
+        android:textColor="@color/color_white"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:minWidth="170dp"
+        android:text="Cancel"
+        android:layout_below="@+id/sessionDetailLocation"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sessionRecordStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_main"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_white"
+        android:layout_below="@+id/student_cancel_session_button"
+        android:text="Start Recording"/>
+
+    <Button
+        android:id="@+id/sessionRecordStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_cancel"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_white"
+        android:layout_below="@+id/student_cancel_session_button"
+        android:text="Stop Recording"/>
+
+</RelativeLayout>
+
+    </ScrollView>

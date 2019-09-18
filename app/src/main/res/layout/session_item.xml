@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.krush.appFragments.SessionItemFragment">
+
+    <TextView
+        android:id="@+id/sessionItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Session Item Title" />
+
+    <TextView
+        android:id="@+id/sessionItemNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sessionItemTitle"
+        android:layout_marginTop="35dp"
+        android:layout_toStartOf="@+id/sessionItemTitle"
+        android:text="Session Name:" />
+
+    <TextView
+        android:id="@+id/sessionItemDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sessionItemNameLabel"
+        android:layout_below="@+id/sessionItemNameLabel"
+        android:layout_marginTop="25dp"
+        android:text="Date:" />
+
+    <TextView
+        android:id="@+id/sessionItemTutorNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sessionItemDateLabel"
+        android:layout_below="@+id/sessionItemDateLabel"
+        android:layout_marginTop="29dp"
+        android:text="Tutor Name:" />
+
+    <TextView
+        android:id="@+id/sessionItemStudentNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sessionItemTutorNameLabel"
+        android:layout_below="@+id/sessionItemTutorNameLabel"
+        android:layout_marginTop="30dp"
+        android:text="Student Name:" />
+
+    <TextView
+        android:id="@+id/sessionItemAudioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sessionItemCourseIDLabel"
+        android:layout_below="@+id/sessionItemCourseIDLabel"
+        android:layout_marginTop="25dp"
+        android:text="Audio Recording:" />
+
+    <TextView
+        android:id="@+id/sessionItemCourseIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sessionItemLocationLabel"
+        android:layout_below="@+id/sessionItemLocationLabel"
+        android:layout_marginTop="27dp"
+        android:text="Course ID:" />
+
+    <TextView
+        android:id="@+id/sessionItemLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sessionItemStudentNameLabel"
+        android:layout_below="@+id/sessionItemStudentNameLabel"
+        android:layout_marginTop="32dp"
+        android:text="Location:" />
+
+    <TextView
+        android:id="@+id/sessionItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sessionItemNameLabel"
+        android:layout_alignBottom="@+id/sessionItemNameLabel"
+        android:layout_marginStart="56dp"
+        android:layout_toEndOf="@+id/sessionItemStudentNameLabel"
+        android:text="Name of Session" />
+
+    <TextView
+        android:id="@+id/sessionItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sessionItemDateLabel"
+        android:layout_alignBottom="@+id/sessionItemDateLabel"
+        android:layout_alignStart="@+id/sessionItemName"
+        android:text="Date of Session" />
+
+    <TextView
+        android:id="@+id/sessionItemTutorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sessionItemStudentNameLabel"
+        android:layout_alignStart="@+id/sessionItemDate"
+        android:text="Name of Tutor" />
+
+    <TextView
+        android:id="@+id/sessionItemStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sessionItemStudentNameLabel"
+        android:layout_alignBottom="@+id/sessionItemStudentNameLabel"
+        android:layout_alignStart="@+id/sessionItemTutorName"
+        android:text="Name of Student" />
+
+    <TextView
+        android:id="@+id/SessionItemLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sessionItemCourseIDLabel"
+        android:layout_alignStart="@+id/sessionItemStudentName"
+        android:text="Location of Session" />
+
+    <TextView
+        android:id="@+id/SessionItemCourseID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sessionItemAudioLabel"
+        android:layout_alignStart="@+id/SessionItemLocation"
+        android:text="Course ID of Session" />
+</RelativeLayout>

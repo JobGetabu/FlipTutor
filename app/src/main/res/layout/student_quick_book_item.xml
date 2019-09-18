@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.krush.studentFragments.StudentBookingItemFragment">
+
+    <TextView
+        android:id="@+id/quickBookItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Quick Book Item" />
+
+    <TextView
+        android:id="@+id/quickBookItemTutorNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/quickBookItemTitle"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="52dp"
+        android:text="Tutor Name:" />
+
+    <TextView
+        android:id="@+id/quickBookItemTutorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/quickBookItemTitle"
+        android:layout_alignTop="@+id/quickBookItemTutorNameLabel"
+        android:layout_marginStart="34dp"
+        android:text="Name of tutor" />
+
+    <TextView
+        android:id="@+id/quickBookItemLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/quickBookItemTutorNameLabel"
+        android:layout_below="@+id/quickBookItemTutorNameLabel"
+        android:layout_marginTop="47dp"
+        android:text="Location:" />
+
+    <TextView
+        android:id="@+id/quickBookItemLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Book Location"
+        android:layout_alignBaseline="@+id/quickBookItemLocationLabel"
+        android:layout_alignBottom="@+id/quickBookItemLocationLabel"
+        android:layout_alignStart="@+id/quickBookItemTutorName" />
+
+    <TextView
+        android:id="@+id/quickBookItemCourseIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/quickBookItemLocationLabel"
+        android:layout_below="@+id/quickBookItemLocationLabel"
+        android:layout_marginTop="49dp"
+        android:text="Course ID:" />
+
+    <TextView
+        android:id="@+id/quickBookItemCourseID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/quickBookItemLocation"
+        android:layout_alignTop="@+id/quickBookItemCourseIDLabel"
+        android:text="Quick Book Course ID" />
+</RelativeLayout>

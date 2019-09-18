@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FlipTutor</string>
+    <string name="menu_home_text">Home</string>
+    <string name="menu_profile_text">Profile</string>
+    <string name="menu_sessions_text">Sessions</string>
+    <string name="menu_booking_text">Booking</string>
+    <string name="menu_availability_text">Availability</string>
+    <string name="login_user_email">Email</string>
+    <string name="login_user_password">Password</string>
+    <string name="login_student">Student</string>
+    <string name="login_tutor">Tutor</string>
+    <string name="save_profile_button_text">Save Changes</string>
+    <string name="profile_email_label">Email</string>
+    <string name="profile_school_label">School</string>
+    <string name="current_password_label">Current Password</string>
+    <string name="new_password_label">New Password</string>
+    <string name="confirm_new_password_label">Confirm New Password</string>
+    <string name="change_picture_button_text">Change Picture</string>
+
+    <!-- Alert Dialog: -->
+    <string name="dialog_are_you_sure">Are you sure?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_schedule_label">Schedule</string>
+    <string name="profile_rate_label">Rate</string>
+    <string name="tutoring_location_label">Tutoring location:</string>
+    <string name="rate_label">Rate per half hour:</string>
+    <string name="school_label">School:</string>
+    <string name="select_courses_label">Select course for tutoring session:</string>
+    <string name="book_tutor_button_text">Book Now</string>
+    <string name="select_time_slot_label">Select time slot for tutoring session:</string>
+    <string name="title_activity_tutor_maps">Map</string>
+</resources>

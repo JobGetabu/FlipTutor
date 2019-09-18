@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sessionLocationHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session Location"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/sessionMap"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/sessionLocationHeader" />
+
+</RelativeLayout>

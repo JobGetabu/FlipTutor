@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Source:
+Regmi, P. (2016). Android Material Design Profile Screen XML UI Design. Viral Android – Tutorials, Examples, UX/UI Design.
+Retrieved 15 March 2017,
+from http://www.viralandroid.com/2016/03/android-material-design-profile-screen-xml-ui-design.html
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tutor_profile_edit_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_background" />
+
+        <!-- Source: https://github.com/hdodenhof/CircleImageView -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tutor_profile_edit_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tutor_profile_edit_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/profile_circle"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_icon"
+            />
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tutor_profile_edit_cover_image"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <Button
+                android:id="@+id/tutor_profile_edit_change_picture_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_picture_button_text"
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:minWidth="150dp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/button_change_picture"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tutor_profile_edit_change_picture_button"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_email_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/tutor_profile_edit_email"
+                android:text="@string/profile_email_label"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/tutor_profile_edit_email"/>
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_school_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/tutor_profile_edit_school"
+                android:text="@string/school_label"
+                android:layout_gravity="start"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tutor_profile_edit_school"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_rate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/tutor_profile_edit_rate"
+                android:text="@string/rate_label"
+                android:layout_gravity="start"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/tutor_profile_edit_rate"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_current_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/tutor_profile_edit_current_password"
+                android:text="@string/current_password_label"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tutor_profile_edit_current_password"
+                android:inputType="textPassword"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_new_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/tutor_profile_edit_new_password"
+                android:text="@string/new_password_label"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tutor_profile_edit_new_password"
+                android:inputType="textPassword"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/tutor_profile_edit_new_password_confirmation_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/tutor_profile_edit_new_password_confirmation"
+                android:text="@string/confirm_new_password_label"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tutor_profile_edit_new_password_confirmation"
+                android:inputType="textPassword"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tutor_profile_edit_save_profile_button"
+                android:text="@string/save_profile_button_text"
+                android:background="@drawable/button_main"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:minWidth="170dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/bottom_bar_color"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
