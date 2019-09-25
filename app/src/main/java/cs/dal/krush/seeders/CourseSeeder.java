@@ -32,7 +32,7 @@ public class CourseSeeder {
         db.course.insert("Software Engineering","CSCI3130");
         db.course.insert("Financial Accounting and Reporting","CSCI3132");
         db.course.insert("Principles of management","CSCI3136");
-        db.course.insert("financail Computing","CSCI3171");
+        db.course.insert("financial Computing","CSCI3171");
         db.course.insert("Cryptography","MATH4116");
         db.course.insert("Regulation","CSCI4152");
         db.course.insert("Differential and Integral Calculus 1","MATH1000");
