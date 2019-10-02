@@ -1,8 +1,8 @@
 package cs.dal.krush;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,8 +12,11 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.database.Cursor;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
+
 import cs.dal.krush.helpers.ValidationHelper;
 import cs.dal.krush.models.DBHelper;
 

@@ -5,19 +5,19 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RatingBar;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -29,9 +29,6 @@ import java.util.Locale;
 import cs.dal.krush.R;
 import cs.dal.krush.helpers.DateFormatHelper;
 import cs.dal.krush.models.DBHelper;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-import static cs.dal.krush.studentFragments.StudentPaymentFragment.COST;
 
 
 /**

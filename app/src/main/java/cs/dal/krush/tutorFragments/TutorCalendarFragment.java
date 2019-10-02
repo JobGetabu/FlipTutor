@@ -1,18 +1,14 @@
 package cs.dal.krush.tutorFragments;
 
-import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
+
 import android.database.Cursor;
 import android.graphics.RectF;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import android.widget.TimePicker;
+
+import androidx.fragment.app.Fragment;
 
 import com.alamkanak.weekview.MonthLoader;
 import com.alamkanak.weekview.WeekView;
@@ -29,7 +25,6 @@ import java.util.List;
 import java.util.Locale;
 
 import cs.dal.krush.R;
-import cs.dal.krush.models.AvailableTime;
 import cs.dal.krush.models.DBHelper;
 
 /**
