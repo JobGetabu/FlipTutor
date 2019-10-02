@@ -16,8 +16,8 @@ public class TutorSeeder {
         db.tutor.insert(1, 1, null, "Tim", "Njugush", "timnjugush@gmail.com", "password", 2, (float)4, 8);
         db.tutor.insert(1, 1, null, "Greg", "Miller", "gregpmillr@gmail.com", "password", 2, (float)4, 8);
         db.tutor.insert(3, 2, null, "Michael", "Njoroge", "mc@gmail.com", "password", 2, (float)4.5, 5);
-        db.tutor.insert(2, 1, null, "Orjan", "Omollo", "om@gmail.com", "password", 5, (float)4.1, 5);
-        db.tutor.insert(4, 5, null, "Eric", "Kante", "ed@gmail.com", "password", 1, (float)3.5, 5);
+        db.tutor.insert(2, 1, null, "gabriel", "kamau", "gkamau@gmail.com", "password", 5, (float)4.1, 5);
+        db.tutor.insert(4, 5, null, "mr", "wandeto", "wandeto@gmail.com", "password", 1, (float)3.5, 5);
         db.tutor.insert(5, 3, null, "Connor", "Kamau", "cw@gmail.com", "password", 4, (float)4, 5);
         db.tutor.insert(2, 2, null, "Jack", "Njuguna", "jr@gmail.com", "password", 2, (float)4.25, 5);
         db.tutor.insert(5, 4, null, "Peter", "Lukip", "pr@gmail.com", "password", 2, (float)3, 5);
